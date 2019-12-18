@@ -1,0 +1,9 @@
+[submodule "os"]
+	path = os
+	url = https://github.com/Digilent/Eclypse-Z7-OS.git
+[submodule "sw"]
+	path = sw
+	url = https://github.com/Digilent/Eclypse-Z7-SW.git
+[submodule "hw"]
+	path = hw
+	url = https://github.com/Digilent/Eclypse-Z7-HW.git
