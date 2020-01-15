@@ -2,21 +2,21 @@
 
 ## Description
 
-This repository is designed to offer a unifying and comprehensive aproch to all the aspects that we provide, across multiple tools, for the Eclypse Z7. By cloning this repo recursively you will receive the repositories for the Viavdo project (HW), SDK workspace (SW) and Petalinux project (OS). Each submodule has it's own submodule dependencies which will be also pulled at cloning. An important aspect of this structure is the fact that both the SW and the OS are heavily depended on the hardware hand-off from the HW repository.
+This repository is designed to offer a unified and comprehensive approach to all the aspects that we provide, across multiple tools, for the Eclypse Z7. By cloning this repo recursively you will receive the repositories for the Vivado project (HW), SDK workspace (SW) and Petalinux project (OS). Each submodule has it's own submodule dependencies which will be also pulled when cloning. An important aspect of this structure is the fact that both the SW and the OS heavily depend on the hardware hand-off from the HW repository.
 
-Each branch of this repository represents a different project with preset functionality. When checking out a branch all the submodules will be automatically configured to the same branch, thus providing a unified flow between all the submodules. For details about the individual functionality of the submodules please refer to the README.md files within the submodules.
+Each branch of this repository represents a different project with preset functionality. When checking out a branch, all the submodules will be automatically configured to the same branch, thus providing a unified flow between all the submodules. For details about the individual functionality of the submodules, please refer to the README.md files within the submodules.
 
-For a detailed structural description of this repository and it's submodules, along with the branching system, please visit [Eclypse Z7 Git Repositoies](https://reference.digilentinc.com/reference/programmable-logic/eclypse-z7/git).
+For a detailed structural description of this repository and it's submodules, along with the branching system, please visit [Eclypse Z7 Git Repositories](https://reference.digilentinc.com/reference/programmable-logic/eclypse-z7/git).
 
 ## First and Foremost
 
-* The Vivado and Petalinux projects are version-specific. Source files are not backward compatible and not automatically forward compatible. Release tags specify the targetted Vivado version. There is only one version targetted per year, as chosen by Digilent. Non-tagged commits on the master branch are either at the last tagged version or the next targeted version. This is not ideal and might be changed in the future adopting a better flow.
+* The Vivado and Petalinux projects are version-specific. Source files are not backward compatible and not automatically forward compatible. Release tags specify the targeted Vivado version. There is only one version targeted per year, as chosen by Digilent. Non-tagged commits on the master branch are either at the last tagged version or the next targeted version. This is not ideal and might be changed in the future adopting a better flow.
 
-* Our projects use submodules to bring in libraries. Use --recursive when cloning or `git submodule init` and `git submodule update`, if cloned already non-recursively.
+* Our projects use submodules to bring in dependendies. Use --recursive when cloning or `git submodule init` and `git submodule update`, if cloned already non-recursively. When checking out a different branch from the one originally cloned, make sure to update the submodules.
 
 ## Requirements
 
-Depending on which parts and branches of the this repository will be used the following will be needed to get it working:
+Depending on which parts and branches of the this repository will be used, the following will be needed to get it working:
 
 * **Eclypse Z7**
 * **Zmod ADC 1410**
@@ -33,7 +33,7 @@ OS:
 
 ## Setup
 
-No setup is needed at this stage, please refer to the individual README.md of each submodule on each branch for a more details.
+No setup is needed at this stage, please refer to the individual README.md of each submodule on each branch for more details.
 
 We provide a ready to use [SD card image](https://github.com/Digilent/Eclypse-Z7/releases) with a Debian 10 Linux distribution, based on the OS repository, custom tailored for the Eclypse Z7 with Zmods in the release section of this repository.
 
@@ -49,8 +49,8 @@ For more information on how our git and project flow is set up, please refer to 
 
 For more information on how Vivado project is version controlled, refer to the [digilent-vivado-scripts repo](https://github.com/digilent/digilent-vivado-scripts).
 
-For more details on how to use the [zmodlib](https://github.com/Digilent/zmodlib) and for instructions on how to set up your environment please visit the [Zmod Base Library User Guide](https://reference.digilentinc.com/reference/zmod/zmodbaselibraryuserguide)
+For more details on how to use the [zmodlib](https://github.com/Digilent/zmodlib) and for instructions on how to set up your environment please visit the [Zmod Base Library User Guide](https://reference.digilentinc.com/reference/zmod/zmodbaselibraryuserguide).
 
-For information related to Petalinux, please visit [Petalinux Reference Guide (UG1144)](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_1/ug1144-petalinux-tools-reference-guide.pdf)
+For information related to Petalinux, please visit [Petalinux Reference Guide (UG1144)](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_1/ug1144-petalinux-tools-reference-guide.pdf).
 
 For technical support or questions, please post on the [Digilent Forum](forum.digilentinc.com).
