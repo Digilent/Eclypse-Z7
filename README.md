@@ -1,4 +1,4 @@
-# Eclypse Z7 Unifying Repository
+# Eclypse Z7 Root Repository
 
 ## Description
 
@@ -52,6 +52,5 @@ For more information on how Vivado project is version controlled, refer to the [
 For more details on how to use the [zmodlib](https://github.com/Digilent/zmodlib) and for instructions on how to set up your environment please visit the [Zmod Base Library User Guide](https://reference.digilentinc.com/reference/zmod/zmodbaselibraryuserguide)
 
 For information related to Petalinux, please visit [Petalinux Reference Guide (UG1144)](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2019_1/ug1144-petalinux-tools-reference-guide.pdf)
-
 
 For technical support or questions, please post on the [Digilent Forum](forum.digilentinc.com).
